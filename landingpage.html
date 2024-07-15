@@ -8,8 +8,8 @@
 
     <style>
     .hero-section {
-         height: 60vn;
          border: 2px solid green;
+         height: 60vn;
          text-align:center;
          display:flex;
          flex-direction: column;
@@ -18,7 +18,7 @@
          background-image: url(https://i.pinimg.com/736x/fa/a6/f5/faa6f50914829ac75223e0ad4cddc8c8.jpg);
          background-size: cover;
          background-position: bottom;
-         color: white;
+         color: rgb(255, 255, 255);
 
         }
 
@@ -33,7 +33,6 @@
 
     .hero-btn {
        background-color: white;
-       color: orange;
        padding: 10px 20px;
        font-size: 2em;
        border: 2px solid black;
@@ -42,18 +41,18 @@
     .feature-section {
        /*border: 2px solid blue;*/
        width: 80%;
-       margin: 30% auto;
+       margin: auto;
        }
    .card {
+    /*border:2px solid red;*/
        text-align: center;
-       width: 20%;
        padding: 40px 20px;
        border-radius: 10px;
        box-shadow: 2px 2px 4px 0px #000000a10;
        transition-duration:1.1ms;
        }
 
-     .card:hover {
+     .card-hover {
       background-color: darkgreen;
       color: white;
        }
@@ -61,6 +60,7 @@
      .card-container { 
       display: flex;
      /*flex-direction: column;*/
+     padding-top:40%;
       gap: 5px;
      justify-content:space-evenly;
      align-items: flex-end;
@@ -71,27 +71,36 @@
      margin: 50% auto;
      border:2px solid blueviolet;
        }
+
      .row {
      display: grid;
      grid-template-columns: 1fr 1fr;
        }
+
      .service-image {
       border: 2px solid red;
        }
+
      .service-info {
      padding: 40px;
        }
+
      .service-title {
      font-size:40px;
        }
+
      .service-feature {
      list-style: none;
      padding: 0;
+     text-align: center;
        }
+
      .service-feature li {
      font-size: 20px;
      margin:20px 0;
+     text-align: center;
        }
+
      .footer {
      background-color: #454545;
      color: white;
@@ -99,10 +108,12 @@
      display: grid;
      grid-template-columns: 5fr 2fr 3fr;
        }
+
      footer h3 {
      margin:0;
      text-align: center;
        }
+
  .main-links a,
  .page-links a,
  .social-links a {
@@ -112,25 +123,28 @@
     text-decoration: none;
     font-size: 1.1em;
     text-align: center;
-      }   
+      }
+
     </style>
 </head>
 <body>
 <header>
 
 </header>
-
 <main>
   <article>
 <section class="hero-section">
 <h1 class="hero-title">Website title</h1>
-<p class="hero-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure totam hic, similique odit tenetur eius. 
-    Maxime nisi culpa illo tempore, minima nihil, laborum incidunt enim ducimus reiciendis inventore, perspiciatis distinctio!</p>
+<p class="hero-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Iure totam hic, similique odit tenetur eius. 
+    Maxime nisi culpa illo tempore, minima nihil,
+     laborum incidunt enim ducimus reiciendis inventore, perspiciatis distinctio!</p>
 <button class="herp-btn">Learn More</button>
 </section>
 <section class="feature-section">
   <div class="card-container">
     <div class="card">
+
   <i class="fa-solid fa-rocket fa-6x"></i>
   <h3>Card Title1</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rem maxime nulla magnam aperiam distinctio asperiores aliquid consectetur porro quo.
@@ -161,29 +175,34 @@
 <h2 class="service-title">Service title</h2>
 <ul class="Service-features">
   
-    <li><i class="fa-solid fa-check-double">services1</i></li>
-    <li><i class="fa-solid fa-check-double">services2</i></li>
-    <li><i class="fa-solid fa-check-double">services3</i></li>
-    <li><i class="fa-solid fa-check-double">services4</i></li>
+    <li class="service-title"><i class="fa-solid fa-circle-check"></i>services1</li>
+    <li class="service-title"><i class="fa-solid fa-circle-check"></i>services2</li>
+    <li class="service-title"><i class="fa-solid fa-circle-check"></i>services3</li>
+    <li class="service-title"><i class="fa-solid fa-circle-check"></i>services4</li>
   </ul>
+  <button style="background-color: red;color: white; font-size: 20px; font-weight: 700;border: none; border-radius: 10px; padding:0px 15px;">Click</button>
  </div>
     </div>
     <div class="row">
       <div class="service-info">
         <h2 class="service_title">service title</h2>
         <ul class="service-feature">
-    <li><i class="fa-solid fa-check-double">services1</i></li>
-    <li><i class="fa-solid fa-check-double">services2</i></li>
-    <li><i class="fa-solid fa-check-double">services3</i></li>
-    <li><i class="fa-solid fa-check-double">services4</i></li>
+    <li class="service-title"><i class="fa-solid fa-circle-check"></i>services1</li>
+    <li class="service-title"><i class="fa-solid fa-circle-check"></i>services2</li>
+    <li class="service-title"><i class="fa-solid fa-circle-check"></i>services3</li>
+    <li class="service-title"><i class="fa-solid fa-circle-check"></i>services4</li>
   </ul>
+  <button style="background-color: rgb(10, 220, 244); color: white; font-size: 20px; font-weight: 700; border: none; border-radius: 10px; padding:0px 15px;">Click</button>
+      </div>
   <div class="service-image">
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfXiiDQTiLgf5c9LAZ6edkeKv0aX4_l_rwCA&s">
 </div> 
 </div>
+
 </section>
 </article>
 </main>
+
 <footer>
 <div class="main-link">
   <h3>Company Name</h3>
